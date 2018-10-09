@@ -10,3 +10,8 @@ path = "src/main.rs"
 
 [dependencies]
 structopt = { version = "0.2.10", default-features = false }
+
+[dev-dependencies.cargo-husky]
+version = "1"
+default-features = false
+features = ["precommit-hook", "run-cargo-test", "run-cargo-clippy"]
