@@ -1,7 +1,15 @@
 Ahnung
 ======
 
-rust Ast Hash geNerator Utility and commaNd ahnunG
+.. image:: https://gitlab.com/grauwoelfchen/ahnung/badges/master/pipeline.svg
+   :target: https://gitlab.com/grauwoelfchen/ahnung/commits/master
+
+.. image:: https://gitlab.com/grauwoelfchen/ahnung/badges/master/coverage.svg
+   :target: https://gitlab.com/grauwoelfchen/ahnung/commits/master
+
+|
+
+rust AST Hash geNerator Utility and commaNd ahnunG
 
 .. raw:: text
 
