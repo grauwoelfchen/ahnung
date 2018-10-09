@@ -1,3 +1,6 @@
 /target
-**/*.rs.bk
-Cargo.lock
+
+/.tools/kcov
+/.tools/gitlab-runner
+
+.env.ci
