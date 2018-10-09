@@ -14,7 +14,7 @@ rust AST Hash geNerator Utility and commaNd ahnunG
 .. raw:: text
 
    # Do you know what does it have changed?
-   Hast du eine Ahnung, was das sich geändert hat?
+   hAST du eine Ahnung, was das sich geändert hat?
 
 
 Usage
