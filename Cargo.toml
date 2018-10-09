@@ -4,4 +4,9 @@ version = "0.1.0"
 authors = ["Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>"]
 edition = "2018"
 
+[[bin]]
+name = "ahnung"
+path = "src/main.rs"
+
 [dependencies]
+structopt = { version = "0.2.10", default-features = false }
