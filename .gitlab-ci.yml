@@ -3,7 +3,7 @@ stages:
   - test
   - build
 
-ci-tools: &ci-tools
+.ci-tools: &ci-tools
   image: grauwoelfchen/rust-ci-tools:nightly
   except:
     - tags
@@ -55,5 +55,3 @@ build:
     - make build
   cache:
     untracked: true
-  only:
-    - tags
