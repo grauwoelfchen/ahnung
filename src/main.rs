@@ -3,7 +3,7 @@ extern crate structopt;
 use structopt::StructOpt;
 
 /// Command line options.
-#[derive(Debug, StructOpt)]
+#[derive(StructOpt)]
 #[structopt(
     name = "ahnung",
     about = "\nAn utility command for AST Hash of Rust codes."
