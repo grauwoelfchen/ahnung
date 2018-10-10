@@ -9,7 +9,7 @@ stages:
     - tags
 
 # stages
-check:
+format:
   stage: vet
   <<: *ci-tools
   before_script:
