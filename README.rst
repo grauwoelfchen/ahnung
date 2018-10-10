@@ -7,14 +7,11 @@ Ahnung
 .. image:: https://gitlab.com/grauwoelfchen/ahnung/badges/master/coverage.svg
    :target: https://gitlab.com/grauwoelfchen/ahnung/commits/master
 
-|
 
-rust AST Hash geNerator Utility and commaNd ahnunG
+Ahnung: rust AST Hash geNerator Utility and commaNd ahnunG
 
-.. raw:: text
-
-   # Do you know what does it have changed?
-   hAST du eine Ahnung, was das sich geändert hat?
+| hAST du eine Ahnung, was das sich geändert hat?
+| # (in English) Do you know what does it have changed?
 
 
 Usage
