@@ -1,6 +1,7 @@
 stages:
   - vet
   - test
+  - coverage
   - build
 
 .ci-tools: &ci-tools
@@ -40,7 +41,18 @@ test:
     - kcov --version
   script:
     - mkdir -p .git/hooks
-    - make test:coverage
+    - make test:all
+
+coverage:
+  stage: coverage
+  <<: *ci-tools
+  before_script:
+    - rustc --version
+    - cargo --version
+    - kcov --version
+  script:
+    - mkdir -p .git/hooks
+    - make coverage
   after_script:
     - cat target/coverage/index.json
 
