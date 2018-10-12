@@ -17,12 +17,13 @@ Ahnung: rust AST Hash geNerator Utility and commaNd ahnunG
 Usage
 -----
 
+See ``ahnung --help``
+
 .. code:: zsh
 
    % cargo run -- -f <file>
 
-   % ahnung <file>
-   % ahnung --help
+   % ahnung --file <file>
 
 
 Build
@@ -42,6 +43,7 @@ Test
 .. code:: zsh
 
    % make test
+   % make test:all
 
 
 License
