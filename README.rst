@@ -19,7 +19,10 @@ Usage
 
 .. code:: zsh
 
+   % cargo run -- -f <file>
+
    % ahnung <file>
+   % ahnung --help
 
 
 Build
