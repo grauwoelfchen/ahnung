@@ -3,6 +3,10 @@ name = "ahnung"
 version = "0.0.1"
 authors = ["Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>"]
 
+[lib]
+name = "ahnung"
+path = "src/lib.rs"
+
 [[bin]]
 name = "ahnung"
 path = "src/main.rs"
