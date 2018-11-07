@@ -27,7 +27,10 @@ fn main() {
 
     let s = ahnung::read_file(&opts.file);
     match s {
-        Ok(content) => println!("{}", content),
+        Ok(content) => {
+            // TODO
+            ahnung::print(&content);
+        }
         Err(e) => panic!(e),
     };
 }

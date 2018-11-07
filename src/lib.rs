@@ -19,6 +19,11 @@ pub fn read_file(file: &str) -> io::Result<String> {
     Ok(buffer)
 }
 
+/// Print file content.
+pub fn print(content: &str) {
+    println!("{}", content)
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
