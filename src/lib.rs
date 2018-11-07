@@ -25,7 +25,7 @@ mod tests {
 
     #[test]
     fn test_read_file_returns_file_content() {
-        let s = read_file("./Cargo.toml").expect("hoi");
+        let s = read_file("./Cargo.toml").unwrap();
         assert!(s.contains("ahnung"));
     }
 }
