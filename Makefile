@@ -41,7 +41,7 @@ test\:lib:  ## Run only tests for lib
 	cargo test --lib
 .PHONY: test\:lib
 
-test\:integraiton:  ## Run integrations test only
+test\:integration:  ## Run integrations test only
 	cargo test --test integration_test
 .PHONY: test\:integration
 
