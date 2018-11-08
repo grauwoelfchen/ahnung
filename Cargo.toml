@@ -11,6 +11,9 @@ path = "src/lib.rs"
 name = "ahnung"
 path = "src/main.rs"
 
+[profile.release]
+panic = "abort"
+
 [dependencies]
 structopt = "0.2.10"
 
