@@ -2,6 +2,8 @@
 #[macro_use]
 extern crate structopt;
 
+extern crate ahnung;
+
 use std::process;
 
 use structopt::StructOpt;
