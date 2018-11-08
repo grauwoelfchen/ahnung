@@ -1,7 +1,6 @@
 stages:
   - vet
   - test
-  - coverage
   - build
 
 .ci-tools: &ci-tools
@@ -44,7 +43,7 @@ test:
     - make test:all
 
 coverage:
-  stage: coverage
+  stage: test
   <<: *ci-tools
   before_script:
     - rustc --version
