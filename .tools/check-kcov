@@ -10,6 +10,8 @@ fi
 
 if [ -n "${2:-}" ]; then
   kcov_cmd="${2}"
+elif [ ! -z "${KCOV_PATH:-}" ]; then
+  kcov_cmd="${KCOV_PATH}"
 else
   kcov_dir="$(dirname $(readlink -f "${0}"))/kcov"
   kcov_cmd="${kcov_dir}/bin/kcov"
