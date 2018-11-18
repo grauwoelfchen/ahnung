@@ -53,7 +53,7 @@ coverage:
     - kcov --version
   script:
     - mkdir -p .git/hooks
-	  - cargo clean --target-dir target/debug
+   - cargo clean --target-dir target/debug
     - make coverage
   after_script:
     - cat target/coverage/index.json
