@@ -21,10 +21,8 @@ mod integration_test {
             .output()
             .unwrap();
 
-        assert!(
-            String::from_utf8_lossy(&output.stderr)
-                .contains("file does not exist")
-        );
+        assert!(String::from_utf8_lossy(&output.stderr)
+            .contains("file does not exist"));
         assert_eq!(String::from_utf8_lossy(&output.stdout), "");
     }
 
