@@ -39,7 +39,7 @@ mod integration_test {
             .unwrap();
 
         assert_eq!(String::from_utf8_lossy(&output.stderr), "");
-        assert!(String::from_utf8_lossy(&output.stdout).contains("Cargo.toml"));
+        assert!(String::from_utf8_lossy(&output.stdout).contains("[package]"));
 
         output = Command::new("./target/debug/ahnung")
             .arg("--file")
@@ -48,6 +48,6 @@ mod integration_test {
             .unwrap();
 
         assert_eq!(String::from_utf8_lossy(&output.stderr), "");
-        assert!(String::from_utf8_lossy(&output.stdout).contains("Cargo.toml"));
+        assert!(String::from_utf8_lossy(&output.stdout).contains("[package]"));
     }
 }

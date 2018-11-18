@@ -2,8 +2,9 @@
 #[macro_use]
 extern crate structopt;
 
+extern crate ahnung;
+
 use std::process;
-use std::path::Path;
 
 use structopt::StructOpt;
 
@@ -26,11 +27,12 @@ fn main() {
         process::exit(1);
     }
 
-    let path = Path::new(&opts.file);
-    if !path.exists() {
-        eprintln!("file does not exist");
-        process::exit(1);
-    }
-
-    println!("path: {path}", path = path.to_string_lossy());
+    let s = ahnung::read_file(&opts.file);
+    match s {
+        Ok(content) => {
+            // TODO
+            ahnung::print(&content);
+        }
+        Err(e) => panic!(e),
+    };
 }

@@ -27,7 +27,7 @@ lint: | vet\:lint
 vet\:all: | vet\:check vet\:format vet\:lint  ## Check by all vet:xxx targets
 .PHONY: vet\:all
 
-vet: | vet\:format  ## Same as vet:format
+vet: | vet\:check  ## Same as vet:check
 .PHONY: vet
 
 
@@ -41,7 +41,7 @@ test\:lib:  ## Run only tests for lib
 	cargo test --lib
 .PHONY: test\:lib
 
-test\:integraiton:  ## Run integrations test only
+test\:integration:  ## Run integrations test only
 	cargo test --test integration_test
 .PHONY: test\:integration
 
@@ -56,27 +56,24 @@ test: | test\:lib  ## Same as test:lib
 # -- coverage
 
 coverage\:bin:  ## Create coverage report of tests for bin (alias cov:bin)
-	cargo clean --target-dir target/debug
 	cargo test --bin ahnung --no-run
-	./.tools/check-kcov ahnung kcov
+	./.tools/check-kcov ahnung
 .PHONY: coverage\:bin
 
 cov\:bin: | coverage\:bin
 .PHONY: cov\:bin
 
 coverage\:lib:  ## Create coverage report of tests for lib (alias cov:lib)
-	cargo clean --target-dir target/debug
 	cargo test --lib --no-run
-	./.tools/check-kcov ahnung kcov
+	./.tools/check-kcov ahnung
 .PHONY: coverage\:lib
 
 cov\:lib: | coverage\:lib
 .PHONY: cov\:lib
 
 coverage\:integration:  ## Create coverage report of integrations test (alias cov:integration)
-	cargo clean --target-dir target/debug
 	cargo test --test integration_test --no-run
-	./.tools/check-kcov integration_test kcov
+	./.tools/check-kcov integration_test
 .PHONY: coverage\:integration
 
 cov\:integration: | coverage\:integration
