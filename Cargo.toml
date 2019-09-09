@@ -15,7 +15,7 @@ path = "src/main.rs"
 panic = "abort"
 
 [dependencies]
-structopt = "0.2.10"
+structopt = "0.3.1"
 
 [dev-dependencies.cargo-husky]
 version = "1"
